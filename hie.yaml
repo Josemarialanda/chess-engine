@@ -1,0 +1,12 @@
+cradle:
+  multi:
+    # - path: "ignore/"
+    #   config: {cradle: {none: }}
+    - path: "src"
+      config: {cradle: {cabal: {component: "chess-engine:chess-engine-exe"}}}
+    
+    - path: "lib"
+      config: {cradle: {cabal: {component: "lib:chess-engine"}}}
+  
+    - path: "test"
+      config: {cradle: {cabal: {component: "chess-engine:chess-engine-test"}}}
